@@ -1,3 +1,26 @@
-header div{
-    color: magenta;
+#menu{
+    text-align: center;
+}
+div>h3{
+    text-align: center;
+}
+.container{
+    background-color: rgb(161, 165, 168);
+    color: blacks;
+}
+.navbar-brand{
+    text-align: left;
+    font-size: large;
+}
+
+#codebrainery-toggle-nav{
+    text-align: center;
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: solidblack;
+}
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 40px;
 }
