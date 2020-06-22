@@ -34,14 +34,36 @@ WARNING!!! WARNING!!!
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 (function(window){
-    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-    for (var i; i<names.length;i++) {
-        var firstletter = names[i].charAt(0).toLowerCase();
-        if (firstletter=="j"){
-            byeSpeaker.speak(names[i]);
+    //var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    //for (var i; i<names.length;i++) {
+      //  var firstletter = names[i].charAt(0).toLowerCase();
+        //if (firstletter=="j"){
+          //  byeSpeaker.speak(names[i]);
+        //}
+        //else{ 
+          //  helloSpeaker.speak(names[i]);
+       // }
+      //}
+      for (name of names) {
+
+        // STEP 11:
+        // Retrieve the first letter of the current name in the loop.
+        // Use the string object's 'charAt' function. Since we are looking for
+        // names that start with either upper case or lower case 'J'/'j', call
+        // string object's 'toLowerCase' method on the result so we can compare
+        // to lower case character 'j' afterwards.
+        // Look up these methods on Mozilla Developer Network web site if needed.
+        var firstLetter = name[0];
+        firstLetter = firstLetter.toLowerCase();
+        // STEP 12:
+        // Compare the 'firstLetter' retrieved in STEP 11 to lower case
+        // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
+        // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
+        // name in the loop.
+        if (firstLetter == "j") {
+            byeSpeaker.speak(name);
+        } else {
+            helloSpeaker.speak(name);
         }
-        else{ 
-            helloSpeaker.speak(names[i]);
-        }
-      }
+    }
 })(window);
