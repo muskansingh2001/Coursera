@@ -36,7 +36,7 @@ WARNING!!! WARNING!!!
 (function(window){
     var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
     for (var i; i<names.length;i++) {
-        var firstLetter = names[i].charAt[0].tolowercase();
+        var firstletter = names[i].charAt[0].tolowercase();
         if (firstletter=="j"){
             byeSpeaker.speak(names[i]);
         }
